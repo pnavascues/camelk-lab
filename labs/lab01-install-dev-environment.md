@@ -96,7 +96,9 @@ To test if this worked you are going to attempt to install CamelK into your proj
 
 If that worked you should get access to an empty CamelK environment. Commands like `kamel get`will return that you have no integrations deployed yet. Try it out!
 
-![alt text](https://github.com/pnavascues/camelk-lab/raw/master/labs/images/post-camel-k-architecture-detail.png "CamelK Architecture")
+![alt text](https://github.com/pnavascues/camelk-lab/raw/master/labs/images/post-camelk-install-architecture.png "CamelK Architecture")
+
+![alt text](https://github.com/pnavascues/camelk-lab/raw/master/labs/images/post-camelk-install-console.png "Openshift console with CamelK operator")
 
 If that worked **Congratulations!**
 
