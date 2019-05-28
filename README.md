@@ -19,7 +19,7 @@ In this lab you will learn about the client tooling required to work with CamelK
   - oc cli & **connecting to Openshift**
   - **CamelK cli** and ```kamel init```
 
-[Lab 01 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab01-install-dev-environment.md) <br>
+[Lab 01 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab01-install-dev-environment.md) <br>
 [Lab 01 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script01-install-dev-environment.sh)
 
 #### Lab 02: Install applications _[TBD mins]_
@@ -29,7 +29,7 @@ In this lab you will learn about the two applications that we will be integratin
   - Application **REST** service
   - **Telegram** mobile app account
 
-[Lab 02 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab02-install-applications.md) <br>
+[Lab 02 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab02-install-applications.md) <br>
 [Lab 02 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script02-install-applications.sh)
 
 #### Lab 03: Deploy integration _[TBD mins]_
@@ -39,7 +39,7 @@ In this lab you will create your first version of the integration function with 
   - **Develop MVP** integration
   - Deploy MVP
 
-[Lab 03 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab03-deploy-integration.md) <br>
+[Lab 03 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab03-deploy-integration.md) <br>
 [Lab 03 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script03-deploy-integration.sh)
 
 #### Lab 04: Test developer mode _[TBD mins]_
@@ -50,7 +50,7 @@ In this lab you will learn how to automatically refresh the integration function
   - Develop **finished integration**
   - Test
 
-[Lab 04 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab04-test-dev-mode.md) <br>
+[Lab 04 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab04-test-dev-mode.md) <br>
 [Lab 04 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script04-test-dev-mode.sh)
 
 #### Lab 05: Management _[TBD mins]_
@@ -60,14 +60,14 @@ In this lab you will learn how to test the use case and get a peek at how to mon
   - **Monitoring** and alerting
   - Debugging and **logs**
 
-[Lab 05 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab05-management.md) <br>
+[Lab 05 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab05-management.md) <br>
 [Lab 05 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script05-management.sh)
 
 #### Extra lab 06: CI/CD, Gitops _[TBD mins]_
 
 In this lab you will learn about how to do a simple CI/CD with CamelK.
 
-[Extra lab 06 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab06-cicd.md) <br>
+[Extra lab 06 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab06-cicd.md) <br>
 [Extra lab 06 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script06-cicd.sh)
 
 <!--
@@ -75,7 +75,7 @@ In this lab you will learn about how to do a simple CI/CD with CamelK.
 
 In this lab you will learn about how to do a simple CI/CD with CamelK.
 
-[Extra lab 07 Intructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab07-runtime-performance.md) <br>
+[Extra lab 07 Instructions](https://github.com/pnavascues/camelk-lab/blob/master/labs/lab07-runtime-performance.md) <br>
 [Extra lab 07 Script](https://github.com/pnavascues/camelk-lab/blob/master/scripts/script07-runtime-performance.sh)
 )
 -->
