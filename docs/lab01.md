@@ -1,47 +1,51 @@
-# Deploy CamelK Operator
+# Hands-on with Camel-K
 
-  1. create a new namespace
+##  Install Camel-K's Operator
 
-    oc new-project lab-{user}
+The very first step into Camel-K is to install the Operator for Camel-K.
+
+1. create a new namespace
+
+        oc new-project lab-{user}
 
 
-  2. From OCP, ensure you're on the new namespace and browse the catalogue to choose the CamelK operator
+2. From OCP, ensure you're on the new namespace and browse the catalogue to choose the CamelK operator
 
-  ![](images/lab01/operator-camelk.png)
+    ![](images/lab01/operator-camelk.png)
 
-  click the `Install` button, and select the specific namespace you just created for the lab:
+    click the `Install` button, and select the specific namespace you just created for the lab:
 
-  ![](images/lab01/operator-camelk-installation.png)
+    ![](images/lab01/operator-camelk-installation.png)
 
-  click the `Subscribe` button. This action should kick off the installation of the Camel-K operator, and after few moments you should see a pod deployed similar to the image below:
+    click the `Subscribe` button. This action should kick off the installation of the Camel-K operator, and after few moments you should see a pod deployed similar to the image below:
 
-  ![](images/lab01/operator-camelk-pod.png)
+    ![](images/lab01/operator-camelk-pod.png)
 
-  Once the pod is running, navigate to the _"Developer Catalog"_ menu and select to install a Camel _IntegrationPlatform_:
+    Once the pod is running, navigate to the _"Developer Catalog"_ menu and select to install a Camel _IntegrationPlatform_:
 
-  ![](images/lab01/operator-camelk-integration-platform.png)
+    ![](images/lab01/operator-camelk-integration-platform.png)
 
-  And with the following YAML definition:
+    And with the following YAML definition:
 
-  ```yaml
-  apiVersion: camel.apache.org/v1alpha1
-  kind: IntegrationPlatform
-  metadata:
-    name: camel-k
-    namespace: lab-{user}
-    labels:
-      app: camel-k
-  ```
+    ```yaml
+    apiVersion: camel.apache.org/v1alpha1
+    kind: IntegrationPlatform
+    metadata:
+      name: camel-k
+      namespace: lab-{user}
+      labels:
+        app: camel-k
+    ```
 
-  where `{user}` is your chosen username.
+    where `{user}` is your chosen username.
 
-  By this point your Camel-K should be fully operable.
+    By this point your Camel-K should be fully operable.
 
 </br>
 
 ---
 
-# Install Camel-K client
+## Install Camel-K client
 
   Download the Camel-K client that corresponds to your machine's architecture.
   
@@ -68,7 +72,7 @@
 
 ---
 
-# Run a Camel-K integration
+## Run a Camel-K integration
 
   Various languages are supported to implement Camel routes when constructing Camel-K integrations.
 
@@ -148,10 +152,10 @@
   Both should display on screen your deployed integration:
 
     NAME    PHASE     CONTEXT
-    hello   Running   ctx-bl8kgvmtf94cr982r290
+    hello   Running   
 
 
-## Undeploy a Camel-K integration
+## Un-deploy a Camel-K integration
 
   To delete an existing integration:
 

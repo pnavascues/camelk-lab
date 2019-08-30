@@ -1,4 +1,11 @@
-# Deploy AMQ-Streams Operator
+# Hands-on with AMQ-Streams
+
+##  Install AMQ-Streams's Operator
+
+The very first step into AMQ-Streams to install the Cluster Operator.
+
+
+## Deploy the AMQ-Streams Operator
 
   1. create a new namespace
 
@@ -39,7 +46,11 @@
       - 3 x Zookeper Nodes
       - 3 x Kafka Brokers
 
-      After few moments all the pods should be deployed and ready:
+      After few moments all the pods should be deployed and ready, if you execute the command:
+
+            oc get pods
+
+      you should see:
 
       ```shell
       NAME                                            READY   STATUS
@@ -96,7 +107,7 @@ containing the following definition:
     <route>
         <from uri="timer:producer?repeatCount=10"/>
         <setBody>
-            <simple>message ${property.CamelTimerCounter}</simple>
+            <simple>message ${exchangeProperty.CamelTimerCounter}</simple>
          </setBody>
         <log message="sending: ${body}"/>
         <to uri="kafka:lab-test?brokers=YOUR_BROKER_SERVICE_URI"/>
@@ -106,6 +117,8 @@ containing the following definition:
 where `YOUR_BROKER_SERVICE_URI` is the service URI corresponding to your Kafka service.
 
 > **Note:** The Camel Kafka component is configured to use the topic `lab-test` which does not exist in the cluster yet. However the default installation is configured to automatically create the topics when clients attempt to use them.
+
+> **Be patient:** Again, because we're using for the first time the Kafka component, it may take some time to build.
 
 Run the integration with the command (DEV mode):
 
