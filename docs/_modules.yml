@@ -1,0 +1,13 @@
+modules:
+  intro:
+    name: Introduction and Setup
+  lab01: 
+    name: Lab 01
+  lab02: 
+    name: Lab 02
+  lab03: 
+    name: Lab 03
+  lab04: 
+    name: Lab 04
+  lab05: 
+    name: Lab 05
