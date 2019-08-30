@@ -2,7 +2,7 @@ id: "lab-camelk"
 name: "CamelK Lab"
 
 content:
-  url: https://raw.githubusercontent.com//pnavascues/camelk-lab/master/
+  url: https://raw.githubusercontent.com/pnavascues/camelk-lab/master/docs
 
 vars:
   KUBEADMIN_PASSWORD: "default"
